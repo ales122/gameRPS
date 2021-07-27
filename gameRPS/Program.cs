@@ -21,11 +21,11 @@ namespace gameRPS
                 }
                 if (flag)
                 {
+                    int computerMove = GenerateComputerMove(args); string key = GenarateHMACkey();
+                    GenerateComputerMoveHMAC(key, args[computerMove]);
                     int playerMove = ShowMenu(args) - 1;
                     if (playerMove >= 0)
                     {
-                        int computerMove = GenerateComputerMove(args); string key = GenarateHMACkey();
-                        GenerateComputerMoveHMAC(key, args[computerMove]);
                         Console.WriteLine($"You move:{args[playerMove]}");
                         Console.WriteLine($"Computer move:{args[computerMove]}");
                         Console.WriteLine(DefineWinner(playerMove, computerMove, args));
