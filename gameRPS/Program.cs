@@ -78,7 +78,7 @@ namespace gameRPS
         static int GenerateComputerMove(string[] args)
         {
             Random random = new Random();
-            return random.Next(0, args.Length - 1);
+            return random.Next(0, args.Length);
         }
         static string GenarateHMACkey()
         {
