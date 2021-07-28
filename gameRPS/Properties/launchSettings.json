@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "gameRPS": {
-      "commandName": "Project",
-      "commandLineArgs": "rock paper scissors lizard Spock sump fish"
-    }
-  }
-}
